@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 
 body,
 header,
@@ -9,27 +9,38 @@ main {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  background: linear-gradient(to right, #30cfd0, #330867);
+  font-family: "Gilda Display", serif;
+  color: #E9E9E9;
+  background: linear-gradient(to right, #000, #3B5255);
   margin: 0;
+  background-image: url("assets/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+
   height: 100vh;
   justify-content: center;
   gap: 20px;
 
   figure {
     overflow: hidden;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 374px;
+    height: 230px;
+    /*border-radius: 50%;*/
+    /*margin-bottom: 10px;*/
+  }
 
-    img {
+  .logo {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: scale(2.3);
-      object-position: top 17px right -41px;
+      transform: scale(0.95);
+      -webkit-filter: drop-shadow(5px 5px 5px #222);
+      filter: drop-shadow(5px 5px 5px #222);
+      margin: auto;
+      /*object-position: top 17px right -41px;*/
     }
   }
 
@@ -44,19 +55,33 @@ body {
     font-weight: 400;
   }
 
+  .svg{
+    height: 25px;
+    margin: -2px 5px -6px 0px;
+    fill: url(#my-cool-gradient);
+  }
+
+  .btn_icon{
+    border-radius: 10px;
+    height: 90%;
+    margin: -10px 5px -15px 0px;
+  }
+
   main {
     gap: 20px;
 
     button {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
+      font-family: "Gilda Display", serif;
+      font-weight: bold;
       font-size: 16px;
-      width: 200px;
+      width: 300px;
       height: 50px;
-      background-color: #ffffff;
-      color: #333;
+      background-color: #E9E9E9;
+      color: #444;
       border: none;
       border-radius: 10px;
+      transition: 0.2s;
+      -webkit-transition: 0.2s;
 
       &:hover {
         cursor: pointer;
